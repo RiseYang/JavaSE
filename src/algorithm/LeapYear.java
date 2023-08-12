@@ -1,13 +1,24 @@
+package algorithm;
+
 import java.util.Scanner;
+/**
+ * 
+ * @ClassName: LeapYear 
+ * @Description: TODO åˆ¤æ–­å“ªä¸€å¹´ä¸ºé—°å¹´
+ * @author: yang
+ * @date: 2023å¹´8æœˆ12æ—¥ ä¸‹åˆ1:48:14
+ */
 public class LeapYear {
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println("ÇëÊäÈëÒ»¸öÄê·İ£º");
-        long year = scan.nextLong();// ½ÓÊÕÓÃ»§ÊäÈë
-        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) { // ÊÇÈòÄê
-            System.out.print(year + "ÊÇÈòÄê£¡");
-        } else { // ²»ÊÇÈòÄê
-            System.out.print(year + "²»ÊÇÈòÄê£¡");
+            //æ‰“å°è¾“å‡ºè¯­å¥
+            Scanner sc =new Scanner(System.in);
+            System.out.println("è¯·è¾“å…¥ä¸€ä¸ªå¹´ä»½ï¼š");
+            long year = sc.nextLong();
+            //åˆ¤æ–­æ˜¯å¦ä¸ºé—°å¹´
+            if(year % 4 == 0 && year % 100 != 0 || year % 400 == 0){
+                System.out.println(year+ "ä¸ºé—°å¹´ï¼");
+            }else{
+                System.out.println(year+ "ä¸ºå¹³å¹´ï¼");
         }
     }
 }
