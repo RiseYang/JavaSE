@@ -2,7 +2,7 @@ package algorithm.Test;
 
 /**
  * @program: JavaTest
- * @description: 素数
+ * @description: 素数:指的是“大于1的整数中,只能被1和这个数本身整除的数”
  * @author: panyang
  * @create: 2021-05-19 20:36
  **/
